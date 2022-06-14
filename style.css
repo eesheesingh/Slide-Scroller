@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+/* font-family: 'Kdam Thmor Pro', sans-serif; for matrix*/
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Fascinate&family=Lobster&family=Patrick+Hand&family=Patrick+Hand+SC&family=Poppins&family=Shadows+Into+Light&display=swap');/* font-family: 'Exo 2', sans-serif;
+font-family: 'Fascinate', cursive;
+font-family: 'Lobster', cursive;
+font-family: 'Patrick Hand', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Shadows Into Light', cursive;
+font-family: 'Patrick Hand SC', cursive; */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+  }
+  
+  
+
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .left-slide {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .left-slide > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .left-slide h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    text-align: center;
+  }
+
+  .left-slide p{
+    margin-top: 10px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+/*shawshank*/
+  .shawshank__text h1{
+    font-family: 'Fascinate', cursive;
+  }
+  .shawshank__text h3{
+    font-family: 'Fascinate', cursive;
+  }
+  .shawshank__text p{
+    font-family: 'Exo 2', sans-serif;
+        font-weight: 500;
+  }
+
+
+  /*the datk knight*/
+  .darkknight__text h1{
+    font-family: 'Lobster', cursive;
+  }
+
+
+/*inception*/
+  .inception__text h1{
+    font-family: 'Patrick Hand SC', cursive;
+  }
+  .inception__text p{
+    font-weight: 500;
+  }
+/* matrix section */
+  .matrix__text  p{
+    color: #00CC00;
+  }
+  .matrix__text h1{
+    color: #00CC00;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+  }
+ /*avengers*/
+ .war__text p{
+  font-family: 'Exo 2', sans-serif;
+
+ }
+
+
+
+  .right-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .right-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  button:hover {
+    color: #222;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .slider-container .action-button button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+  }
+  
+  .slider-container .action-button .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .slider-container .action-button .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }

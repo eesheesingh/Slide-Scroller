@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Fascinate&family=Lobster&family=Patrick+Hand&family=Patrick+Hand+SC&family=Poppins&family=Shadows+Into+Light&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+  }
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    background: #222;
+  }
+  
+  .text__title{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 50px;
+    letter-spacing: 1px;
+    color: #fff;
+    display: inline-block;
+    
+  }
+  
+.button__movie{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+ appearance: none;
+ background: none;
+ border: none;
+ outline: none;
+ cursor: none;
+ cursor: pointer;
+ padding: 20px 40px;
+ border-radius: 8px;
+ color: #212121;
+ font-weight: 600;
+ margin: 0 15px;
+ transition: 0.4s;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover{
+  color: black;
+}
+.movie__button{
+  color: #0f0e0e;
+  border: 3px solid #fff;
+  background-image: linear-gradient(to right, transparent 50%, #fff 50% );
+  background-size: 200%;
+  background-position: 0%;
+}
+
+.movie__button:hover{
+  color: black;
+  background-position: 100%;
+}
